@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.epoch.demo.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.epoch.demo.model.User">
+        <result column="USER_ID" property="id" />
+        <result column="USER_NAME" property="userName" />
+        <result column="LOGIN_NAME" property="loginName" />
+        <result column="CREATE_DATE" property="creteTime" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        USER_ID, USER_NAME, LOGIN_NAME, CREATE_DATE
+    </sql>
+
+    <select id="findByName" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List" />
+        from t_console_user
+        where LOGIN_NAME = #{userName}
+    </select>
+
+</mapper>
