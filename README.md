@@ -5,4 +5,6 @@ mybatis & mybatis-plus demo
 增加多数据源配置
 集成P6spy
 
+https://github.com/baomidou/mybatis-plus-samples
+https://mybatis.plus/
 
