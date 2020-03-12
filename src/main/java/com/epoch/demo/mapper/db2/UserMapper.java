@@ -1,5 +1,6 @@
-package com.epoch.demo.mapper;
+package com.epoch.demo.mapper.db2;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.epoch.demo.model.User;
 import org.apache.ibatis.annotations.Mapper;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Repository;
  * Description:
  */
 
+@DS("slave_1")
 @Mapper
 public interface UserMapper extends BaseMapper<User> {
     User findByName(@Param("userName") String userName);

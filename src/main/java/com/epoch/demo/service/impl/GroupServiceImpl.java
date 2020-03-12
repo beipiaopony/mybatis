@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.epoch.demo.mapper.GroupMapper;
+import com.epoch.demo.mapper.db1.GroupMapper;
 import com.epoch.demo.model.Group;
 import com.epoch.demo.service.GroupService;
 import org.springframework.stereotype.Service;

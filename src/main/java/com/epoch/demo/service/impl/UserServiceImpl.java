@@ -1,7 +1,7 @@
 package com.epoch.demo.service.impl;
 
 
-import com.epoch.demo.mapper.UserMapper;
+import com.epoch.demo.mapper.db2.UserMapper;
 import com.epoch.demo.model.User;
 import com.epoch.demo.service.UserService;
 import org.springframework.stereotype.Service;

@@ -12,7 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-@MapperScan(value ={"com.epoch.demo.mapper"})
 public class AppDemo {
     public static void main(String[] args) {
         // 程序启动入口
